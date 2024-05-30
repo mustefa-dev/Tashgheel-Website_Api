@@ -9,3 +9,4 @@ namespace Tashgheel_Api.DATA.DTOs
         public CategoryType Type { get; set; }
     }
 }
+
