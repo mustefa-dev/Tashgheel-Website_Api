@@ -1,0 +1,140 @@
+2024-04-16 18:02:29.289 +03:00 [ERR] Error in /signin-linkedin GET An error was encountered while handling the remote login.    at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tashgheel_Api.Helpers.CustomPayloadTooLargeMiddleware.Invoke(HttpContext context) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Helpers\CustomPayloadTooLargeFilter.cs:line 25
+   at Tashgheel_Api.Helpers.CustomUnauthorizedMiddleware.InvokeAsync(HttpContext context) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Helpers\CustomUnauthorizedFilter.cs:line 25
+System.Exception: An error was encountered while handling the remote login.
+ ---> System.Exception: The oauth state was missing or invalid.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tashgheel_Api.Helpers.CustomPayloadTooLargeMiddleware.Invoke(HttpContext context) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Helpers\CustomPayloadTooLargeFilter.cs:line 25
+   at Tashgheel_Api.Helpers.CustomUnauthorizedMiddleware.InvokeAsync(HttpContext context) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Helpers\CustomUnauthorizedFilter.cs:line 25
+2024-04-16 18:08:20.263 +03:00 [ERR] Error in /api/users POST Requested value 'string' was not found.    at System.Enum.TryParseByName(RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, UInt64& result)
+   at System.Enum.TryParseInt32Enum(RuntimeType enumType, ReadOnlySpan`1 value, Int32 minInclusive, Int32 maxInclusive, Boolean ignoreCase, Boolean throwOnFailure, TypeCode type, Int32& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at System.Enum.Parse(Type enumType, String value)
+   at Tashgheel_Api.Services.UserService.Register(RegisterForm registerForm) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Services\UserService.cs:line 71
+   at Tashgheel_Api.Controllers.UsersController.Create(RegisterForm registerForm) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Controllers\AuthController.cs:line 28
+   at lambda_method48(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tashgheel_Api.Helpers.CustomPayloadTooLargeMiddleware.Invoke(HttpContext context) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Helpers\CustomPayloadTooLargeFilter.cs:line 25
+   at Tashgheel_Api.Helpers.CustomUnauthorizedMiddleware.InvokeAsync(HttpContext context) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Helpers\CustomUnauthorizedFilter.cs:line 25
+System.ArgumentException: Requested value 'string' was not found.
+   at System.Enum.TryParseByName(RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, UInt64& result)
+   at System.Enum.TryParseInt32Enum(RuntimeType enumType, ReadOnlySpan`1 value, Int32 minInclusive, Int32 maxInclusive, Boolean ignoreCase, Boolean throwOnFailure, TypeCode type, Int32& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at System.Enum.Parse(Type enumType, String value)
+   at Tashgheel_Api.Services.UserService.Register(RegisterForm registerForm) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Services\UserService.cs:line 71
+   at Tashgheel_Api.Controllers.UsersController.Create(RegisterForm registerForm) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Controllers\AuthController.cs:line 28
+   at lambda_method48(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tashgheel_Api.Helpers.CustomPayloadTooLargeMiddleware.Invoke(HttpContext context) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Helpers\CustomPayloadTooLargeFilter.cs:line 25
+   at Tashgheel_Api.Helpers.CustomUnauthorizedMiddleware.InvokeAsync(HttpContext context) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Helpers\CustomUnauthorizedFilter.cs:line 25
+2024-04-16 18:24:19.921 +03:00 [ERR] Error in /api/users POST Requested value 'string' was not found.    at System.Enum.TryParseByName(RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, UInt64& result)
+   at System.Enum.TryParseInt32Enum(RuntimeType enumType, ReadOnlySpan`1 value, Int32 minInclusive, Int32 maxInclusive, Boolean ignoreCase, Boolean throwOnFailure, TypeCode type, Int32& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at System.Enum.Parse(Type enumType, String value)
+   at Tashgheel_Api.Services.UserService.Register(RegisterForm registerForm) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Services\UserService.cs:line 71
+   at Tashgheel_Api.Controllers.UsersController.Create(RegisterForm registerForm) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Controllers\AuthController.cs:line 28
+   at lambda_method48(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tashgheel_Api.Helpers.CustomPayloadTooLargeMiddleware.Invoke(HttpContext context) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Helpers\CustomPayloadTooLargeFilter.cs:line 25
+   at Tashgheel_Api.Helpers.CustomUnauthorizedMiddleware.InvokeAsync(HttpContext context) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Helpers\CustomUnauthorizedFilter.cs:line 25
+System.ArgumentException: Requested value 'string' was not found.
+   at System.Enum.TryParseByName(RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, UInt64& result)
+   at System.Enum.TryParseInt32Enum(RuntimeType enumType, ReadOnlySpan`1 value, Int32 minInclusive, Int32 maxInclusive, Boolean ignoreCase, Boolean throwOnFailure, TypeCode type, Int32& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at System.Enum.Parse(Type enumType, String value)
+   at Tashgheel_Api.Services.UserService.Register(RegisterForm registerForm) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Services\UserService.cs:line 71
+   at Tashgheel_Api.Controllers.UsersController.Create(RegisterForm registerForm) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Controllers\AuthController.cs:line 28
+   at lambda_method48(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tashgheel_Api.Helpers.CustomPayloadTooLargeMiddleware.Invoke(HttpContext context) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Helpers\CustomPayloadTooLargeFilter.cs:line 25
+   at Tashgheel_Api.Helpers.CustomUnauthorizedMiddleware.InvokeAsync(HttpContext context) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Helpers\CustomUnauthorizedFilter.cs:line 25
+2024-04-16 19:46:26.960 +03:00 [ERR] Error in /api/users POST Requested value 'string' was not found.    at System.Enum.TryParseByName(RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, UInt64& result)
+   at System.Enum.TryParseInt32Enum(RuntimeType enumType, ReadOnlySpan`1 value, Int32 minInclusive, Int32 maxInclusive, Boolean ignoreCase, Boolean throwOnFailure, TypeCode type, Int32& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at System.Enum.Parse(Type enumType, String value)
+   at Tashgheel_Api.Services.UserService.Register(RegisterForm registerForm) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Services\UserService.cs:line 71
+   at Tashgheel_Api.Controllers.UsersController.Create(RegisterForm registerForm) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Controllers\AuthController.cs:line 28
+   at lambda_method48(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tashgheel_Api.Helpers.CustomPayloadTooLargeMiddleware.Invoke(HttpContext context) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Helpers\CustomPayloadTooLargeFilter.cs:line 25
+   at Tashgheel_Api.Helpers.CustomUnauthorizedMiddleware.InvokeAsync(HttpContext context) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Helpers\CustomUnauthorizedFilter.cs:line 25
+System.ArgumentException: Requested value 'string' was not found.
+   at System.Enum.TryParseByName(RuntimeType enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, UInt64& result)
+   at System.Enum.TryParseInt32Enum(RuntimeType enumType, ReadOnlySpan`1 value, Int32 minInclusive, Int32 maxInclusive, Boolean ignoreCase, Boolean throwOnFailure, TypeCode type, Int32& result)
+   at System.Enum.TryParse(Type enumType, ReadOnlySpan`1 value, Boolean ignoreCase, Boolean throwOnFailure, Object& result)
+   at System.Enum.Parse(Type enumType, String value)
+   at Tashgheel_Api.Services.UserService.Register(RegisterForm registerForm) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Services\UserService.cs:line 71
+   at Tashgheel_Api.Controllers.UsersController.Create(RegisterForm registerForm) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Controllers\AuthController.cs:line 28
+   at lambda_method48(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tashgheel_Api.Helpers.CustomPayloadTooLargeMiddleware.Invoke(HttpContext context) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Helpers\CustomPayloadTooLargeFilter.cs:line 25
+   at Tashgheel_Api.Helpers.CustomUnauthorizedMiddleware.InvokeAsync(HttpContext context) in C:\Users\Lenovo\RiderProjects\Tashgheel-V2\Helpers\CustomUnauthorizedFilter.cs:line 25

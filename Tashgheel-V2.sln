@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tashgheel-V2", "Tashgheel-V2.csproj", "{4D21FC8D-79A4-4CBA-9D39-A4D1574AD5EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D21FC8D-79A4-4CBA-9D39-A4D1574AD5EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D21FC8D-79A4-4CBA-9D39-A4D1574AD5EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D21FC8D-79A4-4CBA-9D39-A4D1574AD5EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D21FC8D-79A4-4CBA-9D39-A4D1574AD5EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

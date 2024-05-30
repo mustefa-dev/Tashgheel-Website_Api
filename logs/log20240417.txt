@@ -1,0 +1,11 @@
+2024-04-17 22:42:52.580 +03:00 [ERR] Error in /signin-linkedin GET An error was encountered while handling the remote login.    at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tashgheel_Api.Helpers.CustomPayloadTooLargeMiddleware.Invoke(HttpContext context) in C:\Users\pc\RiderProjects\Tashgheel_api\Helpers\CustomPayloadTooLargeFilter.cs:line 25
+   at Tashgheel_Api.Helpers.CustomUnauthorizedMiddleware.InvokeAsync(HttpContext context) in C:\Users\pc\RiderProjects\Tashgheel_api\Helpers\CustomUnauthorizedFilter.cs:line 25
+System.Exception: An error was encountered while handling the remote login.
+ ---> System.Exception: The oauth state was missing or invalid.
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tashgheel_Api.Helpers.CustomPayloadTooLargeMiddleware.Invoke(HttpContext context) in C:\Users\pc\RiderProjects\Tashgheel_api\Helpers\CustomPayloadTooLargeFilter.cs:line 25
+   at Tashgheel_Api.Helpers.CustomUnauthorizedMiddleware.InvokeAsync(HttpContext context) in C:\Users\pc\RiderProjects\Tashgheel_api\Helpers\CustomUnauthorizedFilter.cs:line 25

@@ -1,0 +1,57 @@
+{
+  "data": [
+    {
+      "creatorName": "creator",
+      "creatorId": "891244a0-eaa5-4fb9-8967-7d5b7eff77a9",
+      "name": "string",
+      "description": "string",
+      "image": "string",
+      "price": "string",
+      "discount": 0,
+      "categoryId": "7fcc8cfe-c7a0-4b17-b32c-eb8141b4ea1c",
+      "chapters": [
+        {
+          "title": "A1",
+          "descreption": "string",
+          "status": 0,
+          "courseId": "bae4d179-0d25-4851-9e83-298ef252ed24",
+          "order": 0,
+          "videos": [],
+          "id": "a89f0bb9-a269-4957-bf53-51eef1778923",
+          "creationDate": "2024-04-30T09:41:32.68033Z"
+        },
+        {
+          "title": "A2",
+          "descreption": "string",
+          "status": 0,
+          "courseId": "bae4d179-0d25-4851-9e83-298ef252ed24",
+          "order": 1,
+          "videos": [],
+          "id": "83c31c3a-3770-4d72-8598-d8cf4a902a05",
+          "creationDate": "2024-04-30T09:41:40.993144Z"
+        },
+        {
+          "title": "A3",
+          "descreption": "string",
+          "status": 0,
+          "courseId": "bae4d179-0d25-4851-9e83-298ef252ed24",
+          "order": 2,
+          "videos": [],
+          "id": "3bc202ec-2206-454d-bb44-05d597394803",
+          "creationDate": "2024-04-30T09:41:52.858125Z"
+        }
+      ],
+      "reviews": [],
+      "level": "string",
+      "language": "string",
+      "timeDuration": "string",
+      "numOfVideos": 0,
+      "id": "bae4d179-0d25-4851-9e83-298ef252ed24",
+      "creationDate": "2024-04-30T09:39:00.634799Z"
+    }
+  ],
+  "pagesCount": 1,
+  "currentPage": 1,
+  "type": "CourseDto",
+  "totalCount": 1
+}
